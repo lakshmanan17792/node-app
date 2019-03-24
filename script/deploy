@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh  <<EOF
+ssh root@192.168.2.7 <<EOF
  cd ~/node-app
  git pull
 # npm install — production
