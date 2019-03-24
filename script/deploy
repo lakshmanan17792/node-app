@@ -1,8 +1,9 @@
 #!/bin/sh
-ssh root@192.168.2.7 <<EOF
+ssh  <<EOF
  cd ~/node-app
  git pull
- npm install — production
+# npm install — production
+ npm start index.js 
  pm2 restart all
  exit
 EOF
